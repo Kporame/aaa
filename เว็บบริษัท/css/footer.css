@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+.container4 {
+   max-width: 1400px;
+   margin: 0 auto;
+   box-sizing: border-box;
+}
+
+footer {
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+   background: linear-gradient(to bottom, #00041c, #2d0b00);
+   color: #fff;
+   padding: 100px 0 30px;
+   font-size: 13px;
+   line-height: 20px;
+   position: relative;
+   /* Ensure it stays in the normal document flow */
+}
+
+.row {
+   width: 85%;
+   margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   justify-content: space-between;
+}
+
+.col {
+   flex-basis: 25%;
+   padding: 10px;
+}
+
+.col:nth-child(2),
+.col:nth-child(3) {
+   flex-basis: 15%;
+}
+
+.logo1 {
+   width: 160px;
+   margin-bottom: 30px;
+}
+
+.col h3 {
+   font-family: "Crimson Text", serif;
+   font-size: 20px;
+   width: fit-content;
+   margin-bottom: 40px;
+   position: relative;
+}
+
+.col p {
+   font-family: "Crimson Text", serif;
+   font-size: 16px;
+}
+
+.email-id {
+   width: fit-content;
+   border-bottom: 1px solid #fff;
+   margin: 20px 0;
+
+}
+
+ul li {
+   font-family: "Crimson Text", serif;
+   font-size: 16px;
+   list-style: none;
+   margin-bottom: 12px;
+}
+
+ul li a {
+   font-family: "Crimson Text", serif;
+   text-decoration: none;
+   color: #fff;
+}
+
+.custom-form {
+   padding-bottom: 16px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 1px solid #ccc;
+   margin-bottom: 50px;
+}
+
+.custom-form .bx {
+
+   font-size: 18px;
+   margin-right: 10px;
+}
+
+.custom-form input {
+
+   width: 100%;
+   background: transparent;
+   color: #ccc;
+   border: 0;
+   outline: none;
+}
+
+.custom-form .custom-button {
+   background: transparent;
+   border: 0;
+   outline: none;
+   cursor: pointer;
+}
+
+.custom-form .custom-button .bx {
+   font-size: 16px;
+   color: #ccc;
+}
+
+.social-icons .bx {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   text-align: center;
+   line-height: 50px;
+   color: #000;
+   background: #fff;
+   margin-right: 10px;
+   cursor: pointer;
+}
+hr{
+   width: 90%;
+   border: 0;
+   border-bottom: 1px solid #ccc;
+   margin: 20px auto;
+}
+.copyright{
+   text-align: center;
+}
+
+.underline {
+   width: 100%;
+   height: 5px;
+   background: #767676;
+   border-radius: 3px;
+   position: absolute;
+   top: 25px;
+   left: 0;
+   overflow: hidden;
+}
+
+.underline span {
+   width: 20px;
+   height: 100%;
+   background: #fff;
+   border: 3px;
+   position: absolute;
+   top: 0;
+   left: 10px;
+   animation: moving 2s linear infinite;
+}
+@keyframes moving{
+   0%{
+      left: -20px;
+   }
+   100%{
+      left: 100%;
+   }
+}

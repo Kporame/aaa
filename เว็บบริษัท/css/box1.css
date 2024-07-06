@@ -1,0 +1,55 @@
+
+.container {
+   max-width: 1400px;
+   margin: 0 auto;
+}
+.box1 {
+   background: linear-gradient(to bottom, #00041c, #2d0b00);
+}
+.box1-con{
+   display: flex;
+   justify-content: space-between;
+   
+}
+.box1-info{
+   width: 250%;
+   padding: 2rem;
+}
+.box1-info h3 {
+   font-size: 1rem;
+   color: white;
+   font-family: "Mitr", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   
+}
+h2{
+   color: #F0F0F0;
+}
+.box1-info h1 {
+   font-size: 2rem;
+   color: #F0F0F0;
+   font-family: "Mitr", sans-serif;
+font-weight: 400;
+font-style: normal;
+   
+}
+.box1-info p {
+   margin: 1rem 0;
+   color: white;
+   font-family: "Mitr", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+.box1-info .box1-btn {
+   display: inline-block;
+   background-color: white;
+   color: #050C9C;
+   padding: 1rem;
+   border-radius: 5px;
+   text-decoration: none;
+}
+.box1-img img {
+   width: 650px;
+   padding: 3rem;
+}

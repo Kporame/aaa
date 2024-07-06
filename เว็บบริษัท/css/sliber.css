@@ -1,0 +1,164 @@
+/* การตั้งค่าทั่วไปสำหรับคอนเทนเนอร์ */
+.container2 {
+   max-width: 1400px;
+   margin: 0 auto;
+   box-sizing: border-box;
+}
+
+/* การตั้งค่าของสไลเดอร์คอนเทนเนอร์ */
+.slider-container2 {
+   width: 100%;
+   height: 100vh;
+   /* background-image: url('../img/backkk.jpg');  */
+   background: linear-gradient(to bottom, #000000, #00041c);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5); */
+}
+.background-video {
+   position: absolute;
+   top: 100;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover; /* Ensure the video covers the entire container */
+   z-index: -1; /* Place the video behind the content */
+   box-shadow: inset 0 0 0 2000px rgba( 0, 0, 0, 0.5);
+}
+
+
+/* การตั้งค่าของคอนเทนเนอร์รูปภาพสไลเดอร์ */
+.slider-images {
+   display: flex;
+   align-items: center;
+   gap: 30px;
+   
+}
+
+/* การตั้งค่ารูปภาพแต่ละรูปในสไลเดอร์ */
+.slider-images img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 10px;
+   padding: 4%;
+   
+}
+
+.slider-img {
+   width: 110px;
+   border-radius: 6px;
+   cursor: pointer;
+   position: relative;
+   transition: opacity 3s ease, transform 3s ease; /* ปรับความเร็วของการเคลื่อนไหวให้ช้าลง */
+   opacity: 0; /* เริ่มต้นด้วยความโปร่งใส */
+   transform: translateX(50px); /* เริ่มต้นด้วยการเลื่อนเข้าจากทางขวา */
+}
+
+.slider-img.visible {
+   opacity: 1;
+   transform: translateX(0);
+}
+
+/* การตั้งค่ารูปภาพแรกและรูปภาพสุดท้าย */
+.slider-images .slider-img:first-child,
+.slider-images .slider-img:last-child {
+   height: 480px;
+}
+
+.slider-images .slider-img:nth-child(2),
+.slider-images .slider-img:nth-child(6) {
+   height: 560px;
+}
+
+.slider-images .slider-img:nth-child(3),
+.slider-images .slider-img:nth-last-child(4),
+.slider-images .slider-img:nth-child(5) {
+   height: 665px;
+}
+
+.slider-img:hover {
+   transform: scale(1.1); /* ขยายขนาดเมื่อเมาส์ชี้ */
+   z-index: 1; /* ทำให้รูปภาพที่ขยายอยู่ด้านบนสุด */
+}
+
+.TextH1 {
+   font-family: "Bungee", sans-serif;
+   font-size: 25px;
+   font-weight: 100; /* ปรับขนาดน้ำหนักตัวหนังสือ */
+   text-align: left;
+   text-transform: uppercase;
+   color: white;
+   position: absolute;
+   top: 50%;
+   left: 50%; /* เพิ่ม left: 50% เพื่อให้ตรงกลางทั้งแนวตั้งและแนวนอน */
+   transform: translate(-50%, -50%) rotate(270deg); /* ใช้ translate เพื่อปรับตัวหนังสือให้อยู่ตรงกลาง */
+   transition: 0.7s ease;
+}
+
+.details {
+   position: absolute;
+   bottom: 50px;
+   left: 43px;
+}
+
+.details .TextH2 {
+   font-family: "Bungee", sans-serif;
+   font-size: 26px;
+   font-weight: 700;
+   text-align: left;
+   line-height: 44px;
+   color: white;
+   text-transform: uppercase;
+   transition: 0.7s ease;
+   display: none;
+}
+
+.details .TextP {
+   font-family: "Bungee", sans-serif;
+   font-size: 20px;
+   font-weight: 15px;
+   text-align: left;
+   line-height: 33px;
+   text-align: left;
+   color: white;
+   text-transform: uppercase;
+   transition: 0.7s ease;
+   display: none;
+}
+
+.slider-img.active {
+   width: 766px !important;
+   height: 750px !important;
+}
+
+.slider-img.active .TextH1 {
+   display: none;
+}
+
+.slider-img.active .details .TextP, .slider-img.active .details .TextH2 {
+   display: block;
+}
+
+.details-btn {
+   margin-top: 10px; /* เพิ่มระยะห่างระหว่างข้อความและปุ่ม */
+   padding: 10px 20px;
+   font-size: 16px;
+   background-color: white;
+   color: black;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   text-decoration: none; /* ลบการขีดเส้นใต้ของลิงก์ */
+   display: inline-block; /* ให้ลิงก์แสดงเป็นบล็อกแบบอินไลน์ */
+   transition: background-color 0.3s ease;
+}
+
+.details-btn:hover {
+   background-color: #00bbff;
+   color: white;
+}

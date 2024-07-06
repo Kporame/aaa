@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Oswald:wght@200..700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html, body {
+   height: 100%;
+   width: 100%;
+}
+
+.banner {
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40));
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+
+.navbar {
+   width: 90%;
+   padding: 30px;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.logo {
+   width: 250px;
+   margin-top: -10px;
+   cursor: pointer;
+}
+
+.navbar ul {
+   list-style: none;
+   display: flex;
+   margin: 0;
+   margin-left: auto;
+}
+
+.navbar ul li {
+   margin: 0 20px;
+}
+
+.navbar ul li a {
+   font-family: "Bungee", sans-serif;
+   text-decoration: none;
+   text-transform: uppercase;
+   color: white;
+   font-weight: 100; /*---ปรับขนาดตัวหนังสือmenu---*/
+   padding: 15px;
+}
+
+.navbar ul li a:hover {
+   background: white;
+   transition: 0.5s;
+   color: black;
+}
+
+.content {
+   width: 1600px; /* Adjust width as necessary */
+   position: absolute;
+   color: white;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
+
+.content h1 {
+   font-family: "Bungee", sans-serif;
+   margin-top: 250px;
+   font-size: 60px;
+   font-weight: 800;
+}
+
+.content h2 {
+   font-family: "Bungee", sans-serif;
+   margin-top: -20px;
+   font-size: 35px;
+   font-weight: 300;
+}
+
+button {
+   font-family: "Bungee", sans-serif;
+   width: 200px;
+   padding: 10px;
+   top: 2000px;
+   margin: 20px 5px;
+   text-align: center;
+   border-radius: 25px;
+   color: black;
+   border: 5vi;
+   font-size: 20px;
+   cursor: pointer;
+   font-weight: 400;
+}
+
+button:hover {
+   background: rgb(0,155,226);
+   transition: 0.5s;
+   color: white;
+}
+
+.banner video {
+   width: 100%;
+   height: 100%; /* Ensure the video covers the entire banner */
+   object-fit: cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -1;
+}
+
+
+
+@media(min-aspect-ratio: 16/9) {
+   .banner video {
+       width: 100%;
+       height: auto;
+   }
+}
